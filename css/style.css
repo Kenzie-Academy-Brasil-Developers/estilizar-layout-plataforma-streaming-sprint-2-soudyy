@@ -107,7 +107,9 @@ video {
 /*BODY*/
 
 body {
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #00002e;
@@ -117,7 +119,12 @@ body {
 /*TOPO*/
 
 header.topo {
+    display: flex;
     justify-content: flex-start;
+    width: 100%;
+}
+
+header figure {
     height: 100px;
 }
 
@@ -127,6 +134,8 @@ h3 {
 }
 
 h2 {
+    align-content: center;
+    justify-content: center;
     text-align: center;
     color: white;
     font-size: 50px;
@@ -160,9 +169,8 @@ button {
 
 div.pg-home {
     display: flex;
-    flex-direction: row;
-    align-content: center;
     justify-content: center;
+    align-content: center;
 }
 
 section {
@@ -173,6 +181,7 @@ section {
 div ul {
     width: 858px;
     display: flex;
+    justify-content: center;
     flex-flow: nowrap;
 }
 
@@ -193,6 +202,7 @@ div ul li img {
     header.topo {
         display: flex;
         justify-content: center;
+        align-content: center;
         height: 100px;
     }
     h2 {
@@ -200,10 +210,7 @@ div ul li img {
     }
     /*PÁGINA INICIAL*/
     div.pg-home {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        flex-direction: column;
     }
     section {
         display: flex;
@@ -213,8 +220,11 @@ div ul li img {
     div ul {
         width: 500px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+    }
+    button {
+        margin: 20px;
     }
 }
